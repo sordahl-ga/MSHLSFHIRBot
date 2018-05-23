@@ -1,0 +1,388 @@
+{
+  "luis_schema_version": "3.0.0",
+  "versionId": "0.1",
+  "name": "FHIRClinical",
+  "desc": "",
+  "culture": "en-us",
+  "intents": [
+    {
+      "name": "ChartGlucose"
+    },
+    {
+      "name": "ChartHeartRate"
+    },
+    {
+      "name": "ChartWeight"
+    },
+    {
+      "name": "DisplayCareplan"
+    },
+    {
+      "name": "DisplayGlucose"
+    },
+    {
+      "name": "FindPractitioner"
+    },
+    {
+      "name": "None"
+    },
+    {
+      "name": "RecentWeights"
+    }
+  ],
+  "entities": [
+    {
+      "name": "bloodpressure",
+      "roles": []
+    },
+    {
+      "name": "care",
+      "roles": []
+    },
+    {
+      "name": "testname",
+      "roles": []
+    },
+    {
+      "name": "weight",
+      "roles": []
+    }
+  ],
+  "composites": [],
+  "closedLists": [],
+  "patternAnyEntities": [],
+  "regex_entities": [],
+  "prebuiltEntities": [
+    {
+      "name": "dimension",
+      "roles": []
+    },
+    {
+      "name": "geography",
+      "roles": []
+    },
+    {
+      "name": "number",
+      "roles": []
+    },
+    {
+      "name": "ordinal",
+      "roles": []
+    }
+  ],
+  "model_features": [],
+  "regex_features": [],
+  "patterns": [],
+  "utterances": [
+    {
+      "text": "am i gaining weight",
+      "intent": "RecentWeights",
+      "entities": []
+    },
+    {
+      "text": "call dad mike",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "display careplan",
+      "intent": "DisplayCareplan",
+      "entities": []
+    },
+    {
+      "text": "doctors in paris",
+      "intent": "FindPractitioner",
+      "entities": []
+    },
+    {
+      "text": "email cloney john",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "find me a doctor in atlanta",
+      "intent": "FindPractitioner",
+      "entities": []
+    },
+    {
+      "text": "find me doctors in phoenix",
+      "intent": "FindPractitioner",
+      "entities": []
+    },
+    {
+      "text": "heart rate 40",
+      "intent": "ChartHeartRate",
+      "entities": []
+    },
+    {
+      "text": "heartrate 30",
+      "intent": "ChartHeartRate",
+      "entities": []
+    },
+    {
+      "text": "how is my a1c",
+      "intent": "DisplayGlucose",
+      "entities": []
+    },
+    {
+      "text": "how is my blood sugar doing",
+      "intent": "DisplayGlucose",
+      "entities": []
+    },
+    {
+      "text": "how is my weight",
+      "intent": "RecentWeights",
+      "entities": []
+    },
+    {
+      "text": "how is my weight doing",
+      "intent": "RecentWeights",
+      "entities": []
+    },
+    {
+      "text": "i weigh 180 pounds",
+      "intent": "ChartWeight",
+      "entities": []
+    },
+    {
+      "text": "i weigh 280lbs",
+      "intent": "ChartWeight",
+      "entities": [
+        {
+          "entity": "weight",
+          "startPos": 8,
+          "endPos": 13
+        }
+      ]
+    },
+    {
+      "text": "i weigh 380 pounds",
+      "intent": "ChartWeight",
+      "entities": []
+    },
+    {
+      "text": "i weigh 40kg",
+      "intent": "ChartWeight",
+      "entities": [
+        {
+          "entity": "weight",
+          "startPos": 8,
+          "endPos": 11
+        }
+      ]
+    },
+    {
+      "text": "i weigh 42 kilograms",
+      "intent": "ChartWeight",
+      "entities": []
+    },
+    {
+      "text": "i weigh 90 kilograms",
+      "intent": "ChartWeight",
+      "entities": []
+    },
+    {
+      "text": "last a1c",
+      "intent": "DisplayGlucose",
+      "entities": []
+    },
+    {
+      "text": "list doctors in denver",
+      "intent": "FindPractitioner",
+      "entities": []
+    },
+    {
+      "text": "move the bbq party to friday",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "my blood glucose is 77",
+      "intent": "ChartGlucose",
+      "entities": []
+    },
+    {
+      "text": "my blood glucose is 99",
+      "intent": "ChartGlucose",
+      "entities": []
+    },
+    {
+      "text": "my blood sugar is 200",
+      "intent": "ChartGlucose",
+      "entities": []
+    },
+    {
+      "text": "my blood sugar reading is 88",
+      "intent": "ChartGlucose",
+      "entities": []
+    },
+    {
+      "text": "my heart rate is 88",
+      "intent": "ChartHeartRate",
+      "entities": []
+    },
+    {
+      "text": "my heartrate is 80",
+      "intent": "ChartHeartRate",
+      "entities": []
+    },
+    {
+      "text": "my pulse is 134",
+      "intent": "ChartHeartRate",
+      "entities": []
+    },
+    {
+      "text": "my pulse is 65",
+      "intent": "ChartHeartRate",
+      "entities": []
+    },
+    {
+      "text": "my pulse is 77",
+      "intent": "ChartHeartRate",
+      "entities": []
+    },
+    {
+      "text": "my weight is 180 pounds",
+      "intent": "ChartWeight",
+      "entities": []
+    },
+    {
+      "text": "my weight is 300lbs",
+      "intent": "ChartWeight",
+      "entities": [
+        {
+          "entity": "weight",
+          "startPos": 13,
+          "endPos": 18
+        }
+      ]
+    },
+    {
+      "text": "my weight is 56.3 kg",
+      "intent": "RecentWeights",
+      "entities": []
+    },
+    {
+      "text": "my wieght is 188lbs",
+      "intent": "ChartWeight",
+      "entities": [
+        {
+          "entity": "weight",
+          "startPos": 13,
+          "endPos": 18
+        }
+      ]
+    },
+    {
+      "text": "pulse 50",
+      "intent": "ChartHeartRate",
+      "entities": []
+    },
+    {
+      "text": "pulse is 50",
+      "intent": "ChartHeartRate",
+      "entities": []
+    },
+    {
+      "text": "remind me what symptoms i should be looking out for",
+      "intent": "DisplayCareplan",
+      "entities": []
+    },
+    {
+      "text": "shoe me doctors in nashville",
+      "intent": "FindPractitioner",
+      "entities": []
+    },
+    {
+      "text": "show me doctors in atlanta",
+      "intent": "FindPractitioner",
+      "entities": []
+    },
+    {
+      "text": "show me doctors in nashville",
+      "intent": "FindPractitioner",
+      "entities": []
+    },
+    {
+      "text": "the workshop will last for 10 hours",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "weight 180 kilograms",
+      "intent": "ChartWeight",
+      "entities": []
+    },
+    {
+      "text": "weight 80lbs",
+      "intent": "ChartWeight",
+      "entities": [
+        {
+          "entity": "weight",
+          "startPos": 7,
+          "endPos": 11
+        }
+      ]
+    },
+    {
+      "text": "what is my a1c",
+      "intent": "DisplayGlucose",
+      "entities": []
+    },
+    {
+      "text": "what is my average blood sugar",
+      "intent": "DisplayGlucose",
+      "entities": []
+    },
+    {
+      "text": "what is my care plan",
+      "intent": "DisplayCareplan",
+      "entities": []
+    },
+    {
+      "text": "what is my careplan",
+      "intent": "DisplayCareplan",
+      "entities": []
+    },
+    {
+      "text": "what is my current care plan",
+      "intent": "DisplayCareplan",
+      "entities": []
+    },
+    {
+      "text": "what is my current careplan",
+      "intent": "DisplayCareplan",
+      "entities": []
+    },
+    {
+      "text": "what is my plan of care",
+      "intent": "DisplayCareplan",
+      "entities": []
+    },
+    {
+      "text": "what is my weight",
+      "intent": "RecentWeights",
+      "entities": []
+    },
+    {
+      "text": "what should i be doing",
+      "intent": "DisplayCareplan",
+      "entities": []
+    },
+    {
+      "text": "what should i be doing for my health",
+      "intent": "DisplayCareplan",
+      "entities": []
+    },
+    {
+      "text": "what was my last a1c",
+      "intent": "DisplayGlucose",
+      "entities": []
+    },
+    {
+      "text": "what was my last weight",
+      "intent": "RecentWeights",
+      "entities": []
+    }
+  ]
+}
