@@ -1,9 +1,14 @@
 # FHIRBot 
 
 FHIRBot is an Azure based conversational chatbot to interact with any FHIR DTSU3 compliant server,
-to obtain or update medical record data using natural conversation and commands.
+to obtain or update medical record data using natural conversation and commands. It leverages Cognitive Services from Azure 
+including: Language Understanding, Spell Check, Bot Framework and Translation.
 
-The FHIR Bot is presented as an art of the possible solution.  Security measures have been disabled to allow for public demonstration. 
+The FHIR Bot is presented as an art of the possible solution as part of a larger Azure platform interoperability solution:
+![FHIRBot Interop](fhirbot.png)
+
+<I><sub>Security measures have been disabled to allow for public demonstration. So please do not enter any private or sensative data.</sub></I>
+
 ## Public Demo Instructions
 Note: The public demo is subject to frequent updates and periodic unavailability for maintenance/improvements.
 
@@ -14,6 +19,8 @@ Note: The public demo is subject to frequent updates and periodic unavailability
     + If you want to show text conversation you need to start a text messaging thread to (please contact me for phone #), explain this is demo only, only some functionality can be exposed due to HIPPA might be more coming based on text messaging safe harbor guidance
 
     + You can use the following site to chat in any browser mobile or desktop: http://fhirbotwebuifree.azurewebsites.net/
+    
+    + There is also a Cortana Skill for FHIRBot (Please contact me for info on setup/usage)
 
 
 2.	Bring up the following site in a separate browser window or another device:  https://fhirwatchtower.azurewebsites.net This monitors the FHIR Server for incoming updates and displays trends on weight, pulse, glucose.  It requires authentication with Microsoft Azure AD.  As long as you use Internet Explorer, Edge or Chrome (with Windows 10 account extension) you shouldn’t have to provide credentials.
